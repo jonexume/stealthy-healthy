@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Stealthy Healthy logo">
+  <defs>
+    <!-- Outer dark-blue background circle gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1a6fc4"/>
+      <stop offset="100%" stop-color="#0d4a8c"/>
+    </radialGradient>
+
+    <!-- Main badge gradient (bright blue) -->
+    <radialGradient id="badgeGrad" cx="45%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#4aaef5"/>
+      <stop offset="60%" stop-color="#1a7de8"/>
+      <stop offset="100%" stop-color="#0d5bbf"/>
+    </radialGradient>
+
+    <!-- White-ring drop shadow filter -->
+    <filter id="shadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="rgba(0,0,0,0.35)"/>
+    </filter>
+
+    <!-- Curved text path — arc sitting above centre -->
+    <path id="arcText" d="M 32,105 A 68,68 0 1,1 168,105" fill="none"/>
+  </defs>
+
+  <!-- ── White outer ring ── -->
+  <circle cx="100" cy="110" r="82" fill="white" filter="url(#shadow)"/>
+
+  <!-- ── Blue badge circle ── -->
+  <circle cx="100" cy="110" r="74" fill="url(#badgeGrad)"/>
+
+  <!-- ── Thin white inner ring stroke ── -->
+  <circle cx="100" cy="110" r="74" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="2.5"/>
+
+  <!-- ── Medical plus / cross ── -->
+  <!-- Horizontal bar -->
+  <rect x="58" y="96" width="84" height="28" rx="8" ry="8" fill="white"/>
+  <!-- Vertical bar -->
+  <rect x="86" y="68" width="28" height="84" rx="8" ry="8" fill="white"/>
+
+  <!-- ── Curved "STEALTHY HEALTHY" text ── -->
+  <text font-family="'Arial Rounded MT Bold', 'Arial Black', Arial, sans-serif"
+        font-size="17.5"
+        font-weight="900"
+        fill="white"
+        letter-spacing="2.4"
+        paint-order="stroke"
+        stroke="rgba(0,60,140,0.55)"
+        stroke-width="3"
+        stroke-linejoin="round">
+    <textPath href="#arcText" startOffset="50%" text-anchor="middle">STEALTHY HEALTHY</textPath>
+  </text>
+</svg>
